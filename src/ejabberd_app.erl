@@ -43,6 +43,7 @@ start(normal, _Args) ->
     write_pid_file(),
     application:start(sasl),
     application:start(exmpp),
+    application:start(erlmongo),
     randoms:start(),
     db_init(),
     sha:start(),
